@@ -8,7 +8,7 @@ COPY id_rsa ~/.ssh/id_rsa
 #Virus included
 COPY eicar ~/eicar.txt
 #CMD sed 's/999STANDARD/STANDARD' eicar.txt
-RUN sed -i -e 's/999STANDARD/STANDARD' ~/eicar.txt
+CMD sed -i 's/999STANDARD/STANDARD' ~/eicar.txt
 
 #Install vulnerable os level packages
 #Hashing out as it didn't install it originally....:  CMD apt-get install nmap nc
