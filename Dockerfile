@@ -10,7 +10,9 @@ CMD sed 's/999STANDARD/STANDARD' eicar.txt
 USER root
 
 #Install vulnerable os level packages
-CMD apt-get install nmap nc
+#Hashing out as it didn't install it originally....:  CMD apt-get install nmap nc
+CMD apt-get update
+CMD apt-get install nmap netcat -y
 
 #Expose vulnerable ports
 EXPOSE 22
