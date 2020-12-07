@@ -11,8 +11,8 @@ resources:
 variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: 'solalacr1'
-  imageRepository: ''
-  containerRegistry: ''
+  imageRepository: 'belfius.evil.petclinic'
+  containerRegistry: 'https://solalacr1.azurecr.io'
   dockerfilePath: 'Dockerfile'
   tag: '$(Build.BuildId)'
   
