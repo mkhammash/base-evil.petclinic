@@ -1,13 +1,14 @@
 FROM adoptopenjdk:11.0.3_7-jdk-openj9-0.14.0
 
+USER root
+
 #Secret exposed
 COPY id_rsa ~/.ssh/id_rsa
 
 #Virus included
 COPY eicar ~/eicar.txt
-CMD sed 's/999STANDARD/STANDARD' eicar.txt
-
-USER root
+#CMD sed 's/999STANDARD/STANDARD' eicar.txt
+CMD sed -i -e 's/999STANDARD/STANDARD' ~/eicar.txt
 
 #Install vulnerable os level packages
 #Hashing out as it didn't install it originally....:  CMD apt-get install nmap nc
