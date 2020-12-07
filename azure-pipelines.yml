@@ -10,7 +10,7 @@ resources:
 
 variables:
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: ''
+  dockerRegistryServiceConnection: 'solalacr1'
   imageRepository: ''
   containerRegistry: ''
   dockerfilePath: 'Dockerfile'
