@@ -21,4 +21,6 @@ spec:
       - image: 10.96.172.47:5000/evilpetclinic:latest
         name: evilpetclinic
         resources: {}
+      imagePullSecrets:
+      - name: regcred
 status: {}
