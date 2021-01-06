@@ -10,8 +10,7 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.0.0.RELEASE</version>
-       <!-- <version>2.2.1.RELEASE</version> -->
+    <version>2.2.1.RELEASE</version>
 
   </parent>
   <name>petclinic</name>
@@ -24,18 +23,12 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
     <!-- Web dependencies -->
-    <webjars-bootstrap.version>3.3.3</webjars-bootstrap.version>
-    <webjars-jquery-ui.version>1.11.1</webjars-jquery-ui.version>
-    <webjars-jquery.version>2.2.1</webjars-jquery.version>
-    <wro4j.version>1.7.0</wro4j.version>
-	  
-    <!-- <webjars-bootstrap.version>3.3.6</webjars-bootstrap.version>
+    <webjars-bootstrap.version>3.3.6</webjars-bootstrap.version>
     <webjars-jquery-ui.version>1.11.4</webjars-jquery-ui.version>
     <webjars-jquery.version>2.2.4</webjars-jquery.version>
-    <wro4j.version>1.9.0</wro4j.version> -->
+    <wro4j.version>1.9.0</wro4j.version>
 
-    <jacoco.version>0.8.1</jacoco.version>
-<!--	  <jacoco.version>0.8.5</jacoco.version> -->
+    <jacoco.version>0.8.5</jacoco.version>
     <nohttp-checkstyle.version>0.0.4.RELEASE</nohttp-checkstyle.version>
     <spring-format.version>0.0.25</spring-format.version>
   </properties>
@@ -46,16 +39,6 @@
       <groupId>org.springframework</groupId>
       <artifactId>spring-core</artifactId>
       <version>5.0.1.RELEASE</version>
-    </dependency>
-    <dependency>
-      <groupId>org.yaml</groupId>
-      <artifactId>snakeyaml</artifactId>
-      <version>1.19</version>
-    </dependency>
-    <dependency>
-      <groupId>com.fasterxml.jackson.core</groupId>
-      <artifactId>jackson-databind</artifactId>
-      <version>2.10.2</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
